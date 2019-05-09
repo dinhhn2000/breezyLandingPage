@@ -132,124 +132,92 @@
         </h5>
     </div>
 </div>
-<div class="dev-content">
+<div class="dev-apply-content">
     <div class="nav-links">
         <ul class="breadcrumbs">
             <li class="mr-2">
                 <a href="/breezyLandingPage/"><span>Job Openings</span></a>
                 <i class="fa fa-chevron-right"></i>
             </li>
+            <li class="mr-2">
+                <a href="/breezyLandingPage/dev/"><span>Dev</span></a>
+                <i class="fa fa-chevron-right"></i>
+            </li>
             <li class="current">
-                <span>Dev</span>
+                <span>Apply</span>
             </li>
         </ul>
     </div>
-    <div class="row">
-        <div class="col-8">
-            <div class="dev-video">
-                <iframe src="https://player.vimeo.com/video/oTJIkGdfHK" width="500" height="281" frameborder="0"
-                    webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    <div class="bg-light rounded p-5">
+        <form name="form">
+            <div class="mb-4">
+                <h2>Thông tin cá nhân</h2>
+                <!-- Name -->
+                <h5 class="my-3"><span>Full Name</span><span title="Required">*</span></h5>
+                <input class="form-control" name="cName" type="text" placeholder="Họ tên">
+                <div style="display: none"><span>Cần điền họ tên đầy đủ</span></div>
+                <!-- Email -->
+                <h5 class="my-3"><span>Email Address</span><span title="Required">*</span></h5>
+                <input class="form-control" name="cEmail" type="email" placeholder="Email">
+                <div style="display: none"><span>Cần email</span><span>An email is required</span>
+                </div>
+                <!-- Telephone -->
+                <h5 class="my-3"><span>Phone Number</span></h5>
+                <input class="form-control" name="cPhoneNumber" type="text" placeholder="Số điện thoại">
+                <div style="display: none"><span>Cần 1 số điện thoại</span></div>
             </div>
-            <div class="description my-4">
-                <h2>About the Bookkeeper position</h2>
-                <p>We are looking for an experienced Bookkeeper who will manage company's financial records, such as
-                    sales, receipts, payments, and purchases. Your primary responsibility will be recording all
-                    financial transactions of our business, on a daily basis. You will have to collaborate with our
-                    accounting team to help prepare financial reports, analyze results, manage invoices and tax
-                    payments, and verify the compatibility with legal regulations.</p>
-                <p>We expect you to have a Finance degree, ideally with a graduation from accounting CPE courses. You
-                    should also be familiar with accounting software packages, like FreshBooks, Kashoo, and KashFlow.
-                </p>
-                <h2>Bookkeeper responsibilities are:</h2>
-                <ul>
-                    <li>
-                        <p>Manage financial transactions and oversee posting procedures on a daily basis</p>
-                    </li>
-                    <li>
-                        <p>Organize accounts receivable/payable and payroll procedures</p>
-                    </li>
-                    <li>
-                        <p>Oversee the correctness of transaction records, suppliers ledger, customer ledger and general
-                            ledger</p>
-                    </li>
-                    <li>
-                        <p>Manage the books and provide them to senior management when needed</p>
-                    </li>
-                    <li>
-                        <p>Process tax forms and handle the tax data</p>
-                    </li>
-                    <li>
-                        <p>Store and maintain all bookkeeping data</p>
-                    </li>
-                    <li>
-                        <p>Creat and manage reports and financial statements</p>
-                    </li>
-                </ul>
-                <h2>Bookkeeper requirements are:</h2>
-                <ul>
-                    <li>
-                        <p>3+ years' experience of working on a Bookkeeper position</p>
-                    </li>
-                    <li>
-                        <p>Excellent knowledge of basic bookkeeping and accounting payable/receivable practices</p>
-                    </li>
-                    <li>
-                        <p>Profound experience with calculating, posting and managing accounting figures and financial
-                            records</p>
-                    </li>
-                    <li>
-                        <p>Strong data entry and numeric skills</p>
-                    </li>
-                    <li>
-                        <p>Good practical experience with spreadsheets and related corporate software</p>
-                    </li>
-                    <li>
-                        <p>Excellent English and good knowledge of MS Office</p>
-                    </li>
-                    <li>
-                        <p>Strong customer service and negotiation skills</p>
-                    </li>
-                    <li>
-                        <p>Accuracy, reliability, and attention to detail</p>
-                    </li>
-                    <li>BS degree in Finance, Accounting or Business Administration</li>
-                </ul>
-            </div>
-        </div>
-        <div id="dev-sidebar" class="col-4 px-0">
-            <ul class="apply-btn">
-                <li>
-                    <a href="#" class="btn btn-secondary">
-                        <span>Apply To Position</span>
+            <div>
+                <h2>Kinh nghiệm</h2>
+                <h5 class="my-3"><span>Lịch sử làm việc</span></h5>
+                <div class="work-input">
+                    <a class="text-success position-input-link" onclick="positionInputShow()">
+                        <i class="fa fa-plus"></i>
+                        <span> </span>
+                        <span>Thêm vị trí</span>
                     </a>
-                </li>
-                <li>
-                    <a href="#" class="btn btn-primary">
-                        <img src="https://assets-cdn.breezy.hr/breezy-portal/images/indeed-icon.png">
-                        <span>Apply To Position</span>
+                    <div class="position-input my-3" style="display:none">
+                        <input class="form-control my-3" type="text" placeholder="Công ty">
+                        <input class="form-control my-3" type="text" placeholder="Chức vụ">
+                        <textarea class="form-control" rows="8" placeholder="Tổng kết"></textarea>
+                    </div>
+                    <a class="text-success position-delete-link" style="display:none" onclick="positionInputHide()">
+                        <span>Xóa</span>
                     </a>
-                </li>
-                <li>
-                    <a href="#" class="btn btn-primary">
-                        <i class="fab fa-linkedin"></i>
-                        <span>Apply To Position</span>
+                </div>
+                <div class="educational-input">
+                    <h5 class="my-3"><span>Học vấn</span></h5>
+                    <a class="text-success education-input-link" onclick="educationInputShow()">
+                        <i class="fa fa-plus"></i>
+                        <span> </span>
+                        <span>Thêm học vấn</span>
                     </a>
-                </li>
-            </ul>
-            <hr>
-            <iframe width="100%" height="150" frameborder="0" style="border:0"
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCZ8I8Zyr9Ex3CxhuGEcsHSrIKrBIwURXk&amp;q=VietnamVietnam"></iframe>
-            <hr>
-            <div class="social-link">
-                <a class="text-secondary" href="https://www.facebook.com/cloudjetsolutions/">
-                    <i class="fab fa-facebook-f"></i>
+                    <div class="education-input" style="display:none">
+                        <input class="form-control my-3" type="text" placeholder="Công ty">
+                        <input class="form-control my-3" type="text" placeholder="Chức vụ">
+                        <textarea class="form-control" rows="8" placeholder="Tổng kết"></textarea>
+                    </div>
+                    <a class="text-success education-delete-link" style="display:none" onclick="educationInputHide()">
+                        <span>Xóa</span>
+                    </a>
+                </div>
+                <h5 class="my-3"><span>Tổng kết kinh nghiệm</span></h5>
+                <a class="text-success" style="display:none">
+                    <span>Xóa</span>
                 </a>
+                <textarea class="form-control" rows="8"></textarea>
+                <h5 class="my-3"><span>Hồ sơ</span></h5>
+                <a class="text-success">
+                    <span> </span>
+                    <span>Thêm hồ sơ</span>
+                </a>
+                <h5 class="my-3"><span>Thư xin việc</span></h5>
+                <textarea class="form-control" rows="8"></textarea>
             </div>
-        </div>
+            <button id="submit-dev-btn" type="submit" class="btn btn-secondary py-2 px-3 mt-5">
+                <h5>Submit Application</h5>
+            </button>
+        </form>
     </div>
-    <a href="./apply/" role="button" id="dev-apply-btn" class="btn btn-secondary py-2 px-3">
-        <h4>Đăng ký</h4>
-    </a>
 </div>
 
     <footer class="bg-dark d-flex justify-content-center align-items-center py-5">

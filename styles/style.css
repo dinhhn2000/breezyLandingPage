@@ -142,6 +142,7 @@ footer a:hover {
     list-style: none;
     display: flex;
     color: #888888;
+    padding-left: 0;
 }
 
 .breadcrumbs a {
@@ -150,4 +151,76 @@ footer a:hover {
 
 .breadcrumbs a:hover {
     text-decoration: none;
+}
+
+/* Dev-page content */
+
+.dev-content {
+    padding: 50px 200px;
+}
+
+ul.apply-btn {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.apply-btn li {
+    margin-bottom: 20px;
+}
+
+ul.apply-btn li a {
+    width: 100%;
+    padding: 10px 0;
+}
+
+ul.apply-btn li a.btn-primary {
+    background: #0090ba;
+}
+
+ul.apply-btn li a.btn-primary:hover {
+    background: #027c9f;
+}
+
+ul.apply-btn li a.btn-secondary:hover {
+    background: #86c68f;
+    color: white;
+    border: none;
+}
+
+ul.apply-btn li a.btn-primary img {
+    height: 14px;
+}
+
+#dev-sidebar .social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dev-apply-btn {
+    color: white;
+}
+
+#dev-apply-btn:hover {
+    background: #86c68f;
+    border: none;
+}
+
+/* Dev-apply-page content */
+
+.dev-apply-content {
+    padding: 50px 200px;
+}
+
+#submit-dev-btn:hover {
+    background: #86c68f;
+    border: none;
+}
+
+.position-input-link:hover, .position-delete-link:hover {
+    cursor: pointer;
+}
+
+.education-input-link:hover, .education-delete-link:hover {
+    cursor: pointer;
 }
