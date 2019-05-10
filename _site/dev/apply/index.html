@@ -18,6 +18,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
+    <!-- jQuerry -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!-- Awsome font -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -188,7 +191,6 @@
                     <h5 class="my-3"><span>Học vấn</span></h5>
                     <a class="text-success education-input-link" onclick="educationInputShow()">
                         <i class="fa fa-plus"></i>
-                        <span> </span>
                         <span>Thêm học vấn</span>
                     </a>
                     <div class="education-input" style="display:none">
@@ -206,8 +208,8 @@
                 </a>
                 <textarea class="form-control" rows="8"></textarea>
                 <h5 class="my-3"><span>Hồ sơ</span></h5>
-                <a class="text-success">
-                    <span> </span>
+                <input type="file" id="resume-file-input"/>
+                <a class="text-success" id="resume-upload" onclick="getResumeFile()">
                     <span>Thêm hồ sơ</span>
                 </a>
                 <h5 class="my-3"><span>Thư xin việc</span></h5>

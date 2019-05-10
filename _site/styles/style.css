@@ -219,8 +219,18 @@ ul.apply-btn li a.btn-primary img {
 
 .position-input-link:hover, .position-delete-link:hover {
     cursor: pointer;
+    padding: 3px 0;
 }
 
 .education-input-link:hover, .education-delete-link:hover {
+    cursor: pointer;
+    padding: 3px 0;
+}
+
+#resume-file-input {
+    display: none;
+}
+
+#resume-upload {
     cursor: pointer;
 }

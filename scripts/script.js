@@ -35,3 +35,9 @@ function educationInputHide() {
     link.style.display = "block";
     del.style.display = "none";
 }
+
+// Handle resume file input
+function getResumeFile() {
+    let input = document.getElementById("resume-file-input");
+    input.click();
+}

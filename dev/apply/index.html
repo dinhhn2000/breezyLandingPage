@@ -70,7 +70,6 @@ layout: default
                     <h5 class="my-3"><span>Học vấn</span></h5>
                     <a class="text-success education-input-link" onclick="educationInputShow()">
                         <i class="fa fa-plus"></i>
-                        <span> </span>
                         <span>Thêm học vấn</span>
                     </a>
                     <div class="education-input" style="display:none">
@@ -88,8 +87,8 @@ layout: default
                 </a>
                 <textarea class="form-control" rows="8"></textarea>
                 <h5 class="my-3"><span>Hồ sơ</span></h5>
-                <a class="text-success">
-                    <span> </span>
+                <input type="file" id="resume-file-input"/>
+                <a class="text-success" id="resume-upload" onclick="getResumeFile()">
                     <span>Thêm hồ sơ</span>
                 </a>
                 <h5 class="my-3"><span>Thư xin việc</span></h5>
