@@ -35,7 +35,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm d-flex align-items-center">
-                <a href="/"">
+                <a href="/breezyLandingPage/">
                     <img id="nav-image"
                         src="https://breezy-gallery.imgix.net/cd9be266-7067-4d9f-a7f3-f66e72aaa27d/tom-barrett-318952-unsplash.jpg">
                 </a>
@@ -47,7 +47,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-sm d-flex justify-content-end align-items-center">
+            <div id="nav-button" class="col-sm d-flex justify-content-end align-items-center">
                 <ul class="nav-links m-0">
                     <li class="company">
                         <a href="https://cjs.breezy.com">
@@ -124,15 +124,16 @@
 </div> -->
 
     <div class="banner">
-    <div class="banner-img"></div>
-    <div class="banner-text">
-        <h1>Dev</h1>
-        <h5>
-            <i class="fa fa-map-marker-alt"></i>
-            <span class="mr-3">Vietnam</span>
-            <i class="fa fa-building"></i>
-            <span>Full-Time</span>
-        </h5>
+    <div class="banner-img">
+        <div class="banner-text">
+            <h1>Dev</h1>
+            <h5>
+                <i class="fa fa-map-marker-alt"></i>
+                <span class="mr-3">Vietnam</span>
+                <i class="fa fa-building"></i>
+                <span>Full-Time</span>
+            </h5>
+        </div>
     </div>
 </div>
 <div class="dev-apply-content">
@@ -208,7 +209,7 @@
                 </a>
                 <textarea class="form-control" rows="8"></textarea>
                 <h5 class="my-3"><span>Hồ sơ</span></h5>
-                <input type="file" id="resume-file-input"/>
+                <input type="file" id="resume-file-input" />
                 <a class="text-success" id="resume-upload" onclick="getResumeFile()">
                     <span>Thêm hồ sơ</span>
                 </a>
