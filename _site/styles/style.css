@@ -99,6 +99,20 @@ lg .nav-links .social a {
     }
 }
 
+/* Video */
+
+iframe {
+    width: 500px;
+    height: 280px;
+}
+
+@media only screen and (max-width:450px) {
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
 /* Perk */
 
 #perks .row {
@@ -214,10 +228,6 @@ footer a:hover {
 
 .dev-content .description ul {
     padding-left: 1.5rem;
-}
-
-.dev-content .dev-video iframe {
-    width: 100%;
 }
 
 ul.apply-btn {
