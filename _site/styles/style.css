@@ -101,14 +101,27 @@ lg .nav-links .social a {
 
 /* Video */
 
-iframe {
-    width: 500px;
-    height: 280px;
+.video iframe {
+    width: 100%;
+    height: 300px;
 }
 
 @media only screen and (max-width:450px) {
-    iframe {
+    .video iframe {
         width: 100%;
+        height: auto;
+    }
+}
+
+/* Map */
+.map iframe {
+    width: 300px;
+    height: 150px;
+}
+
+@media only screen and (max-width:450px) {
+    .map iframe {
+        width: 300px;
         height: auto;
     }
 }
@@ -230,9 +243,12 @@ footer a:hover {
     padding-left: 1.5rem;
 }
 
+
+
 ul.apply-btn {
     list-style-type: none;
     padding: 0;
+    width: 300px;
 }
 
 ul.apply-btn li {
@@ -262,6 +278,14 @@ ul.apply-btn li a.btn-primary img {
     height: 14px;
 }
 
+#dev-sidebar {
+    width: 300px;
+}
+
+#dev-sidebar hr {
+    width: 100%;
+}
+
 #dev-sidebar .social-link {
     display: flex;
     justify-content: center;
@@ -275,6 +299,12 @@ ul.apply-btn li a.btn-primary img {
 #dev-apply-btn:hover {
     background: #86c68f;
     border: none;
+}
+
+@media only screen and (max-width:450px) {
+    #dev-apply-btn {
+        display: none;
+    }
 }
 
 /* Dev-apply-page content */
