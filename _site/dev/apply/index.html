@@ -12,7 +12,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -28,6 +28,11 @@
     <link rel="stylesheet" href="/breezyLandingPage/styles/style.css">
     <!-- JS -->
     <script src="/breezyLandingPage/scripts/script.js"></script>
+    <!-- Fancybox files -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
 </head>
 
 <body>
@@ -40,23 +45,19 @@
                         src="https://breezy-gallery.imgix.net/cd9be266-7067-4d9f-a7f3-f66e72aaa27d/tom-barrett-318952-unsplash.jpg">
                 </a>
                 <ul class="nav">
-                    <li class="nav-item">
+                    <li class="nav-item mx-3">
                         <a href="#perks" class="nav-username">
                             <span>Perks</span>
                         </a>
                     </li>
-                </ul>
-            </div>
-            <div id="nav-button" class="col-sm d-flex justify-content-end align-items-center">
-                <ul class="nav-links m-0">
-                    <li class="company">
-                        <a href="https://cjs.breezy.com">
-                            <span class="polygot">Company Website</span>
+                    <li class="nav-item mx-3">
+                        <a href="#gallery" class="nav-username">
+                            <span>Gallery</span>
                         </a>
                     </li>
-                    <li class="social">
-                        <a href="https://www.facebook.com/cloudjetsolutions/">
-                            <i class="fab fa-facebook-f"></i>
+                    <li class="nav-item mx-3">
+                        <a href="#testimonials" class="nav-username">
+                            <span>Testimonials</span>
                         </a>
                     </li>
                 </ul>
@@ -126,12 +127,14 @@
     <div class="banner">
     <div class="banner-img">
         <div class="banner-text">
-            <h1>Dev</h1>
+            <h1>Product Owner</h1>
             <h5>
                 <i class="fa fa-map-marker-alt"></i>
-                <span class="mr-3">Vietnam</span>
+                <span class="mr-3">Afghanistan</span>
                 <i class="fa fa-building"></i>
                 <span>Full-Time</span>
+                <i class="fa fa-building"></i>
+                <span>Product</span>
             </h5>
         </div>
     </div>
@@ -214,6 +217,9 @@
                     <span>Thêm hồ sơ</span>
                 </a>
                 <h5 class="my-3"><span>Thư xin việc</span></h5>
+                <textarea class="form-control" rows="8"></textarea>
+                <h5 class="my-3">Câu hỏi ứng viên số 1</h5>
+                <h6 class="my-3">Mô tả của Câu hỏi ứng viên số 1</h6>
                 <textarea class="form-control" rows="8"></textarea>
             </div>
             <button id="submit-dev-btn" type="submit" class="btn btn-secondary py-2 px-3 mt-5">

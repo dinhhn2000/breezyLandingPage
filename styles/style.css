@@ -113,7 +113,35 @@ lg .nav-links .social a {
     }
 }
 
+/* Gallery */
+
+#gallery {
+    padding: 0px 15%;
+}
+
+#gallery .col-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#gallery .col-6 img {
+    border-radius: 6px;
+}
+
+#dev-sidebar .gallery {
+    width: 300px;
+}
+
+#dev-sidebar .gallery figure img {
+    width: 145px;
+    height: 145px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
 /* Map */
+
 .map iframe {
     width: 300px;
     height: 150px;
@@ -124,6 +152,11 @@ lg .nav-links .social a {
         width: 300px;
         height: auto;
     }
+}
+
+/* description */
+#description {
+    padding: 0px 15%;
 }
 
 /* Perk */
@@ -150,9 +183,9 @@ lg .nav-links .social a {
     padding-left: 0;
 }
 
-.positions-container ul.positions li a {
+.positions-container ul.positions li a, .positions-container ul.positions li h3 {
     padding: 15px 25px;
-    margin: 80px;
+    margin: 20px 80px;
 }
 
 .positions-container ul.positions li a:hover {
@@ -182,22 +215,36 @@ lg .nav-links .social a {
     }
 }
 
-/* Employees */
+/* testimonials */
 
-#employees ul {
+#testimonials ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
+    padding: 0px 13%;
 }
 
-#employees ul li img {
-    width: 125px;
-    height: 125px;
+#testimonials ul li img {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     border: 1px solid #eee;
     border-style: double;
+    margin-bottom: 20px;
+}
+
+#testimonials .testimonial {
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    background: white;
+    max-width: 320px !important;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
 }
 
 /* Footer */
@@ -236,19 +283,18 @@ footer a:hover {
 }
 
 .dev-content .description h4 {
-    margin: 30px 0px;
+    margin-bottom: 30px;
 }
 
 .dev-content .description ul {
     padding-left: 1.5rem;
 }
 
-
-
 ul.apply-btn {
     list-style-type: none;
     padding: 0;
     width: 300px;
+    margin-bottom: 0;
 }
 
 ul.apply-btn li {

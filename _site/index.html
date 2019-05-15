@@ -12,7 +12,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -28,6 +28,11 @@
     <link rel="stylesheet" href="/breezyLandingPage/styles/style.css">
     <!-- JS -->
     <script src="/breezyLandingPage/scripts/script.js"></script>
+    <!-- Fancybox files -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
 </head>
 
 <body>
@@ -40,23 +45,19 @@
                         src="https://breezy-gallery.imgix.net/cd9be266-7067-4d9f-a7f3-f66e72aaa27d/tom-barrett-318952-unsplash.jpg">
                 </a>
                 <ul class="nav">
-                    <li class="nav-item">
+                    <li class="nav-item mx-3">
                         <a href="#perks" class="nav-username">
                             <span>Perks</span>
                         </a>
                     </li>
-                </ul>
-            </div>
-            <div id="nav-button" class="col-sm d-flex justify-content-end align-items-center">
-                <ul class="nav-links m-0">
-                    <li class="company">
-                        <a href="https://cjs.breezy.com">
-                            <span class="polygot">Company Website</span>
+                    <li class="nav-item mx-3">
+                        <a href="#gallery" class="nav-username">
+                            <span>Gallery</span>
                         </a>
                     </li>
-                    <li class="social">
-                        <a href="https://www.facebook.com/cloudjetsolutions/">
-                            <i class="fab fa-facebook-f"></i>
+                    <li class="nav-item mx-3">
+                        <a href="#testimonials" class="nav-username">
+                            <span>Testimonials</span>
                         </a>
                     </li>
                 </ul>
@@ -127,32 +128,30 @@
     <div class="banner-img">
         <div class="banner-text">
             <h1 class="my-3">Hãy gia nhập với chúng tôi</h1>
-            <h5 class="my-5">Come, more and plays</h5>
+            <h5 class="py-5">Come, more and plays</h5>
             <a href="#positions" class="btn btn-lg btn-outline-light">
                 <span>View Openings</span>
             </a>
         </div>
     </div>
 </div>
-<div class="social-links fixed-top">
-
-</div>
-<div id="description" class="container my-5">
+<div id="description" class="container py-5">
     <div class="row">
         <div class="col-sm">
-            <p>We will wecome you</p>
+            <p style="text-align: justify">Talk a bit more about your business. Share some tasty tidbits about what you
+                do and why you're great. Keep it to 1-2 short paragraphs.</p>
         </div>
         <div class="col-sm">
             <div class="video">
-                <iframe src="https://player.vimeo.com/video/oTJIkGdfHK" frameborder="0" webkitallowfullscreen=""
-                    mozallowfullscreen="" allowfullscreen=""></iframe>
+                <iframe src="https://www.youtube.com/embed/yx5379g7lk4?enablejsapi=1" frameborder="0"
+                    webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
             </div>
         </div>
     </div>
 </div>
 <hr>
-<div id="perks" class="container my-5">
-    <div class="row">
+<div id="perks" class="container py-5">
+    <div class="row pt-5 pb-2">
         <i style="background: rgb(148, 84, 44); color: #fff;" class="fas fa-gamepad fa-2x"></i>
     </div>
     <div class="row">
@@ -160,22 +159,144 @@
     </div>
 </div>
 <hr>
-<div id="positions" class="container my-5">
+<div id="gallery" class="container py-5">
+    <div class="row mb-4">
+        <div class="col-6 col-lg-4">
+            <figure>
+                <a class="d-block mb-4" data-fancybox="images"
+                    href="https://breezy-gallery.imgix.net/07275/5367934014428278758735257351643409724997632o.jpg">
+                    <img class="img-fluid"
+                        src="https://breezy-gallery.imgix.net/07275/5367934014428278758735257351643409724997632o.jpg">
+                </a>
+            </figure>
+            <figure>
+                <a class="d-block mb-4" data-fancybox="images"
+                    href="https://breezy-gallery.imgix.net/f1e53/floridasealevelriseglobalwarming-wallpaper-2048x1152.jpg">
+                    <img class="img-fluid"
+                        src="https://breezy-gallery.imgix.net/f1e53/floridasealevelriseglobalwarming-wallpaper-2048x1152.jpg">
+                </a>
+            </figure>
+        </div>
+        <div class="col-6 col-lg-4">
+            <figure>
+                <a class="d-block mb-4" data-fancybox="images"
+                    href="https://breezy-gallery.imgix.net/77566/tha-den-troi-trai-nghiem-khong-the-bo-qua-o-dai-bac.jpg">
+                    <img class="img-fluid"
+                        src="https://breezy-gallery.imgix.net/77566/tha-den-troi-trai-nghiem-khong-the-bo-qua-o-dai-bac.jpg">
+                </a>
+            </figure>
+            <figure>
+                <a class="d-block mb-4" data-fancybox="images"
+                    href="https://breezy-gallery.imgix.net/80faa/turquoisewaterskelingkingbeachindonesia-wallpaper-1920x1080.jpg">
+                    <img class="img-fluid"
+                        src="https://breezy-gallery.imgix.net/80faa/turquoisewaterskelingkingbeachindonesia-wallpaper-1920x1080.jpg">
+                </a>
+            </figure>
+            <figure>
+                <a class="d-block mb-4" data-fancybox="images"
+                    href="https://breezy-gallery.imgix.net/c561c/devilsbridge-wallpaper-1920x1080.jpg">
+                    <img class="img-fluid"
+                        src="https://breezy-gallery.imgix.net/c561c/devilsbridge-wallpaper-1920x1080.jpg">
+                </a>
+            </figure>
+        </div>
+        <div class="col-6 col-lg-4">
+            <figure>
+                <a class="d-block mb-4" data-fancybox="images"
+                    href="https://breezy-gallery.imgix.net/0cb0e/protectanimalsfromclimatechange-wallpaper-1920x1080.jpg">
+                    <img class="img-fluid"
+                        src="https://breezy-gallery.imgix.net/0cb0e/protectanimalsfromclimatechange-wallpaper-1920x1080.jpg">
+                </a>
+            </figure>
+            <figure>
+                <a class="d-block mb-4" data-fancybox="images"
+                    href="https://breezy-gallery.imgix.net/f1500/coolwhitecat-wallpaper-1920x1080.jpg">
+                    <img class="img-fluid"
+                        src="https://breezy-gallery.imgix.net/f1500/coolwhitecat-wallpaper-1920x1080.jpg">
+                </a>
+            </figure>
+            <figure>
+                <a class="d-block mb-4" data-fancybox="images"
+                    href="https://breezy-gallery.imgix.net/d14f8/ab20f8a18653-1047-4abb-b0c0-7d4e86228052.png">
+                    <img class="img-fluid"
+                        src="https://breezy-gallery.imgix.net/d14f8/ab20f8a18653-1047-4abb-b0c0-7d4e86228052.png">
+                </a>
+            </figure>
+        </div>
+    </div>
+</div>
+<hr>
+<div id="positions" class="container py-5">
     <h1 style="text-align: center">Các vị trí còn trống</h1>
     <div class="positions-container">
         <ul class="positions">
             <li class="position transition">`
+                <h3><i class="fas fa-map-marker-alt mr-2"></i>VietNam</h3>
                 <a href="./dev/" class="row">
                     <div class="col-sm text-secondary">
-                        <h2>Dev</h2>
+                        <h2>Sale Manager</h2>
                         <ul class="d-flex px-0">
                             <li class="location mr-3">
                                 <i class="fa fa-map-marker-alt"></i>
                                 <span>Vietnam</span>
                             </li>
-                            <li class="type">
+                            <li class="type mr-3">
                                 <i class="fa fa-building"></i>
                                 <span class="polygot">Full-Time</span>
+                            </li>
+                            <li class="type">
+                                <i class="fa fa-building"></i>
+                                <span class="polygot">Sale</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm d-flex justify-content-end align-items-center">
+                        <button id="applyBtn" class="btn btn-secondary">Apply</button>
+                    </div>
+                </a>
+            </li>
+            <li class="position transition">`
+                <h3><i class="fas fa-map-marker-alt mr-2"></i>Afghanistan</h3>
+                <a href="./dev/" class="row">
+                    <div class="col-sm text-secondary">
+                        <h2>Product Owner</h2>
+                        <ul class="d-flex px-0">
+                            <li class="location mr-3">
+                                <i class="fa fa-map-marker-alt"></i>
+                                <span>Afghanistan</span>
+                            </li>
+                            <li class="type mr-3">
+                                <i class="fa fa-building"></i>
+                                <span class="polygot">Full-Time</span>
+                            </li>
+                            <li class="type">
+                                <i class="fa fa-building"></i>
+                                <span class="polygot">Product</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm d-flex justify-content-end align-items-center">
+                        <button id="applyBtn" class="btn btn-secondary">Apply</button>
+                    </div>
+                </a>
+            </li>
+            <li class="position transition">`
+                <h3><i class="fas fa-map-marker-alt mr-2"></i>United States</h3>
+                <a href="./dev/" class="row">
+                    <div class="col-sm text-secondary">
+                        <h2>Tinh te len nao</h2>
+                        <ul class="d-flex px-0">
+                            <li class="location mr-3">
+                                <i class="fa fa-map-marker-alt"></i>
+                                <span>United States</span>
+                            </li>
+                            <li class="type mr-3">
+                                <i class="fa fa-building"></i>
+                                <span class="polygot">Full-Time</span>
+                            </li>
+                            <li class="type">
+                                <i class="fa fa-building"></i>
+                                <span class="polygot">Tinh Te Depart</span>
                             </li>
                         </ul>
                     </div>
@@ -188,15 +309,29 @@
     </div>
 </div>
 <hr>
-<div id="employees" class="container my-5">
+<div id="testimonials" class="py-5 mx-0 bg-light">
     <h1 style="text-align: center">Thông tin về nhóm</h1>
-    <h4 style="text-align: center">Chúng ta là anh em</h4>
-    <ul class="row">
-        <li class="employee">
+    <ul class="row py-5">
+        <li class="testimonial col-lg">
             <img
-                src="https://breezy-avatars.imgix.net/2b9b6/5367934014428278758735257351643409724997632o.jpg?w=200&amp;h=200&amp;crop=faces&amp;fit=crop">
-            <h5 style="text-align: center" class="name">Emily Rose</h5>
-            <h6 style="text-align: center" class="role">Operation</h6>
+                src="https://breezy-avatars.imgix.net/351af/P70430-171907.jpg?w=200&amp;h=200&amp;crop=faces&amp;fit=crop">
+            <h4 class="name">High dog</h4>
+            <h6 class="role">The Guadian</h6>
+            <p class="mt-4">“ A wonder place to relax ”</p>
+        </li>
+        <li class="testimonial col-lg">
+            <img
+                src="https://breezy-avatars.imgix.net/48bb0/5367934014428278758735257351643409724997632o.jpg?w=200&amp;h=200&amp;crop=faces&amp;fit=crop">
+            <h4 class="name">Emma Rose</h4>
+            <h6 class="role">HR</h6>
+            <p class="mt-4">“ Product is great place to work ”</p>
+        </li>
+        <li class="testimonial col-lg">
+            <img
+                src="https://breezy-avatars.imgix.net/04d74/IMG20160525110723.jpg?w=200&amp;h=200&amp;crop=faces&amp;fit=crop">
+            <h4 class="name">Meow</h4>
+            <h6 class="role">Protecter</h6>
+            <p class="mt-4">“ Some time i feel so lazy. I am a dog!!! ”</p>
         </li>
     </ul>
 </div>
