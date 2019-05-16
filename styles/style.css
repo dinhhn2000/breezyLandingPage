@@ -14,7 +14,11 @@
     display: flex;
 }
 
-.nav .nav-username {
+.header-nav .nav {
+    display: none;
+}
+
+.nav .nav-username, .nav .nav-gallery, .nav .nav-testimonial {
     color: #888888;
     text-decoration: none;
 }
@@ -155,6 +159,7 @@ lg .nav-links .social a {
 }
 
 /* description */
+
 #description {
     padding: 0px 15%;
 }
